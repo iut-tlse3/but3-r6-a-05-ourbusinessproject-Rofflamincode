@@ -19,7 +19,7 @@ public class Project {
 
     /**
      * set Desciption
-     * @param description
+     * @param description description
      */
     public void setDescription(String description) {
         this.description = description;
@@ -27,10 +27,14 @@ public class Project {
 
     /**
      * set Title
-     * @param title
+     * @param title title
      */
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Long getId() {
+        return this.id;
     }
 }
