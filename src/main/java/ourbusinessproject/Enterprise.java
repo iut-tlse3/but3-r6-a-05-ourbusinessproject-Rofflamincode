@@ -1,12 +1,11 @@
 package ourbusinessproject;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+
+import java.util.Collection;
 
 @Entity
 public class Enterprise {
@@ -58,6 +57,10 @@ public class Enterprise {
         ContactEmail = contactEmail;
     }
 
+    /**
+     *
+     * @return id
+     */
     public Long getId() {
         return this.id;
     }
