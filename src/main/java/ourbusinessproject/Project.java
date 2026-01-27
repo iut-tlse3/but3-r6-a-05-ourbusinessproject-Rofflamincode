@@ -9,17 +9,18 @@ public class Project {
     private String title;
     private String description;
 
-    public String getDescription() {
-        return description;
-    }
-
+    /**
+     * set Desciption
+     * @param description
+     */
     public void setDescription(String description) {
         this.description = description;
     }
 
-    public String getTitle() {
-        return title;
-    }
+    /**
+     * set Title
+     * @param title
+     */
 
     public void setTitle(String title) {
         this.title = title;
