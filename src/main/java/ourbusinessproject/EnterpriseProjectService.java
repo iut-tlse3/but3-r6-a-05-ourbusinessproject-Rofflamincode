@@ -4,6 +4,8 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+
 @Service
 public class EnterpriseProjectService {
 
@@ -34,7 +36,8 @@ public class EnterpriseProjectService {
         project.setDescription(aDescription);
         project.setEnterprise(aEnterprise);
         this.entityManager.persist(project);
-        this.entityManager.flush();
+        this.entityManager.flush();  // le flush met bien à jour toute la table coté base de données
+        aEnterprise.addProject(project); // met à jour le graph objet
         return project;
     }
 
