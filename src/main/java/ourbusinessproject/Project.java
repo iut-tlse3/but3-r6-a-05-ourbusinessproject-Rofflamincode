@@ -60,4 +60,12 @@ public class Project {
     public Enterprise getEnterprise() {
         return enterprise;
     }
+
+    /**
+     *
+     * @return title
+     */
+    public String getTitle() {
+        return title;
+    }
 }
