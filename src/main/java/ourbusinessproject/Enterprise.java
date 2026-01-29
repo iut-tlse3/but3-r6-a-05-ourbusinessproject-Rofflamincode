@@ -63,6 +63,14 @@ public class Enterprise {
 
     /**
      *
+     * @return Name
+     */
+    public String getName() {
+        return Name;
+    }
+
+    /**
+     *
      * @return id
      */
     public Long getId() {
