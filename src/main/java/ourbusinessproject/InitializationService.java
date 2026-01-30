@@ -26,6 +26,10 @@ public class InitializationService {
      */
     @Transactional
     public void initProjects() {
+        /* @Transactional permet de maintenir la base de données dans un état fonctionnel.
+         * Cela permet d'isoler une partie de l'application et lorsqu'il y a une erreur, un rollback des
+         * modifications de la base de données est éfféctué pour que cette dernière reste fonctionnelle.
+         */
         initEnterprise();
         project1E1 = enterpriseProjectService.newProject("p1E1","P1E1 desc",enterprise1);
         project1E2 = enterpriseProjectService.newProject("p1E2","P1E2 desc",enterprise2);
